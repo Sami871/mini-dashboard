@@ -33,7 +33,6 @@ export const CarProvider: React.FC<{ children: ReactNode }> = ({ children }) => 
   const [totalPages, setTotalPages] = useState<number>(1);
   const [totalCars, setTotalCars] = useState<number>(0);
 
-  // Reset to page 1 when search or sort changes
   useEffect(() => {
     setCurrentPage(1);
   }, [debouncedSearch, sortBy]);
